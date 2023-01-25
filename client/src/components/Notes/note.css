@@ -1,0 +1,77 @@
+
+.AllNotes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap :5%;
+    grid-row-gap :10%;
+    padding: 10px 0;
+    
+    
+}
+.NoteIndividual{
+    box-shadow: 0px 3px 12px -9px black;
+
+}
+i:hover,.NoteIndividual:hover{
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
+}
+
+
+.note_title{
+    font-weight: 800;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgb(182, 172, 172);
+}
+.note_description{
+    font-size: 16px;
+}
+.note_Tag{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: 700;
+    
+}
+.tag{
+    display: inline-block;
+    width:auto;
+    align-self: center;
+    text-align: center;
+}
+.note_Date{
+
+    font-size: 13px;
+    color: gray;
+
+}
+
+i{
+    cursor: pointer;
+}
+i:hover{
+    color: hotpink;
+}
+
+/* #deleteText,#editText{
+    display: none;
+}
+
+.fa-trash-alt:hover ~ #deleteText{
+    display: block;
+} */
+
+@media screen and (max-width: 769px) {
+    .AllNotes {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+    .tag{
+        padding: 12px;
+        width: 58px;
+        font-size: 10px;
+        text-align: center;
+    }
+}
